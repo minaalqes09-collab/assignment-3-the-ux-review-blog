@@ -1,0 +1,57 @@
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .articles-container {
+    flex-direction: column;
+  }
+  .article-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-thumb-wrapper {
+    width: 100%;
+    height: 180px;
+  }
+}
+@media (max-width: 950px) {
+  .authors-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .author-card {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .rebellion-grid {
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .footer-legal-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

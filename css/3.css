@@ -1,0 +1,185 @@
+.authors-section {
+  background-color: var(--bg-yellow);
+  padding: 70px 24px 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.authors-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.authors-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.authors-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: var(--black);
+}
+
+.authors-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 8px;
+}
+
+.authors-divider {
+  width: 120px;
+  height: 6px;
+  background-color: var(--black);
+  margin: 18px auto 0;
+}
+
+.authors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.author-card {
+  position: relative;
+  border: 4px solid var(--black);
+  box-shadow: 8px 8px 0px var(--black);
+  padding: 40px 24px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.author-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 11px 11px 0px var(--black);
+}
+
+.author-card-yellow {
+  background-color: #fef08a;
+}
+.author-card-green {
+  background-color: #d1fae5;
+}
+.author-card-pink {
+  background-color: #fce7f3;
+}
+
+.author-badge {
+  position: absolute;
+  top: -14px;
+  right: -10px;
+  font-family: "Public Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--white);
+  padding: 4px 12px;
+  border: 2.5px solid var(--black);
+  box-shadow: 3px 3px 0px var(--black);
+  z-index: 2;
+}
+
+.badge-founder {
+  background-color: #ef4444;
+  transform: rotate(10deg);
+}
+.badge-lead {
+  background-color: #3b82f6;
+  transform: rotate(-8deg);
+}
+.badge-viral-author {
+  background-color: #a855f7;
+  transform: rotate(12deg);
+}
+
+.author-avatar-frame {
+  width: 125px;
+  height: 125px;
+  border: 3.5px solid var(--black);
+  box-shadow: 4px 4px 0px var(--black);
+  margin-bottom: 22px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.author-avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.author-name {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.name-danger {
+  color: #991b1b;
+}
+
+.author-role {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.author-bio {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1f2937;
+  margin-bottom: 26px;
+  flex-grow: 1;
+}
+
+.author-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  box-shadow: 2px 2px 0px var(--black);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
+
+.social-btn:hover {
+  background-color: var(--white);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--black);
+}
+
+.social-btn:hover .social-icon {
+  filter: invert(1);
+}
+
+.social-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px var(--black);
+}
